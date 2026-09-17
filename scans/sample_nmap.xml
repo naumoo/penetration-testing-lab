@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmaprun scanner="nmap" args="nmap -sV -oX sample_nmap.xml 192.0.2.10" start="1786000000" version="7.95">
+  <host>
+    <status state="up" reason="syn-ack"/>
+    <address addr="192.0.2.10" addrtype="ipv4"/>
+    <ports>
+      <port protocol="tcp" portid="22"><state state="open"/><service name="ssh" product="OpenSSH" version="lab-example"/></port>
+      <port protocol="tcp" portid="80"><state state="open"/><service name="http" product="Training Web Server" version="lab-example"/></port>
+      <port protocol="tcp" portid="8080"><state state="open"/><service name="http-proxy" product="Intentionally Vulnerable Training App" version="lab-example"/></port>
+    </ports>
+  </host>
+</nmaprun>
